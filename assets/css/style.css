@@ -31,6 +31,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 14px;
 }
 
 button {
@@ -38,7 +39,8 @@ button {
     color: white;
     border: 0rem;
     height: 3rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1.1rem;
 }
 
 button:hover {
@@ -51,12 +53,26 @@ button:hover {
     height: fit-content;
     height: 20rem;
 }
+
+.category {
+    font-weight: 400;
+    font-family: 'Montserrat';
+    font-size: 0.5rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 0rem;
+}
+
+.product-name {
+    font-family: 'Fraunces';
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+}
     
 .product-image img {
     height: 25rem;
     object-fit:cover;
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 0.6rem;
+    border-bottom-left-radius: 0.6rem;
 }
 
 .product-information {
@@ -64,25 +80,45 @@ button:hover {
     flex-direction: column;
     justify-content: space-around;
     background-color: white;
-    height: 21rem;
-    width: 18rem;
-    padding: 2rem;
+    height: 22.15rem;
+    width: 13rem;
+    padding: 1.4rem;
     border-width: 0rem;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem;
     color: var(--main-text-black);
+    font-weight: 400;
     font-family: 'Montserrat';
+    font-size: 0.8rem;
+    line-height: 1.2rem;
 }
 
 .price {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    align-items: start;
+    margin-top: 1.3rem;
+}
+
+.original-price {
+    text-decoration:line-through;
+    color: var(--brand-grey);
+    font-size: 0.6rem;
 }
 
 .current-price {
     color: var(--brand-green);
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-family: 'Fraunces';
+    margin-right: 1rem;
+}
+
+.button-contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#shopping {
+    margin-right: 0.5rem;
 }
